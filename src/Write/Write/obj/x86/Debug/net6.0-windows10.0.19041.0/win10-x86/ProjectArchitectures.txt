@@ -1,0 +1,1 @@
+C:\GitHub\ElegantApp-Write\src\Write\Write\Write.csproj;x86

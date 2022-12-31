@@ -1,0 +1,12 @@
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\bin\x86\Debug\net6.0\Write.Core.deps.json
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\bin\x86\Debug\net6.0\Write.Core.dll
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\bin\x86\Debug\net6.0\Write.Core.pdb
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\Write.Core.csproj.AssemblyReference.cache
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\Write.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\Write.Core.AssemblyInfoInputs.cache
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\Write.Core.AssemblyInfo.cs
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\Write.Core.csproj.CoreCompileInputs.cache
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\Write.Core.dll
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\refint\Write.Core.dll
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\Write.Core.pdb
+C:\GitHub\ElegantApp-Write\src\Write\Write.Core\obj\x86\Debug\net6.0\ref\Write.Core.dll
