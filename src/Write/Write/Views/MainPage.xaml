@@ -7,6 +7,35 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        
+        <StackPanel Orientation="Vertical">
+            <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Bottom">
+                <AppBarButton Icon="NewFolder" Label="New"/>
+                <AppBarButton Icon="OpenFile" Label="Open"/>
+                <AppBarButton Icon="Save" Label="Save"/>
+                <AppBarButton Icon="SaveLocal" Label="Save As"/>
+                <AppBarSeparator></AppBarSeparator>
+                <AppBarButton Icon="Tag" Label="Text"/>
+                <AppBarButton Icon="Calendar" Label="Time"/>
+                <AppBarSeparator></AppBarSeparator>
+                <AppBarButton Icon="Bold" Label="Bold"/>
+                <AppBarButton Icon="Italic" Label="Italic"/>
+                <AppBarButton Icon="Underline" Label="Underline"/>
+                <AppBarSeparator></AppBarSeparator>
+                <AppBarButton Icon="Undo" Label="Undo"/>
+                <AppBarButton Icon="Redo" Label="Redo"/>
+                <AppBarSeparator></AppBarSeparator>
+                <AppBarButton Icon="SelectAll" Label="Select All"/>
+                <AppBarButton Icon="MoveToFolder" Label="Move Cursor"/>
+                <AppBarSeparator></AppBarSeparator>
+                <AppBarButton Icon="Cut" Label="Cut"/>
+                <AppBarButton Icon="Copy" Label="Copy"/>
+                <AppBarButton Icon="Paste" Label="Paste"/>
+                <AppBarButton Icon="Delete" Label="Delete"/>
+                <AppBarSeparator></AppBarSeparator>
+                <AppBarButton Icon="Find" Label="Find"/>
+                <AppBarToggleButton Icon="Redo" Label="Warp"/>
+            </CommandBar>
+            <RichEditBox x:Name="editor"/>
+        </StackPanel>
     </Grid>
 </Page>
