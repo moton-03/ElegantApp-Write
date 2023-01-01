@@ -55,18 +55,16 @@ public sealed partial class MainPage : Page
 
     private void Open_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        UpdateTextBox();
     }
 
     private void Save_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        path = "";
         UpdateTextBox();
     }
 
     private void SaveAs_Click(object sender, RoutedEventArgs e)
     {
-        path = "";
         UpdateTextBox();
     }
 
