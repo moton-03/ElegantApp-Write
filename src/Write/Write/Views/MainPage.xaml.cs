@@ -80,17 +80,17 @@ public sealed partial class MainPage : Page
 
     private void Undo_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        TextBox.Undo();
     }
 
     private void Redo_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        TextBox.Redo();
     }
 
     private void SelectAll_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        TextBox.SelectAll();
     }
 
     private void MoveCursor_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
@@ -100,17 +100,17 @@ public sealed partial class MainPage : Page
 
     private void Cut_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        TextBox.CutSelectionToClipboard();
     }
 
     private void Copy_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        TextBox.CopySelectionToClipboard();
     }
 
     private void Paste_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        TextBox.PasteFromClipboard();
     }
 
     private void Delete_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
@@ -121,5 +121,20 @@ public sealed partial class MainPage : Page
     private void Find_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
 
+    }
+
+    private void ClearHistory_Click(object sender, RoutedEventArgs e)
+    {
+        TextBox.ClearUndoRedoHistory();
+    }
+
+    private void Warp_Checked(object sender, RoutedEventArgs e)
+    {
+        TextBox.TextWrapping = TextWrapping.Wrap;
+    }
+
+    private void Warp_Unchecked(object sender, RoutedEventArgs e)
+    {
+        TextBox.TextWrapping = TextWrapping.NoWrap;
     }
 }

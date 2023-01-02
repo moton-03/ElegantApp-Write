@@ -10,25 +10,87 @@
         <StackPanel Orientation="Vertical">
             <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Bottom">
                 <AppBarButton x:Name="New" Icon="NewFolder" Label="New" Click="New_Click"/>
-                <AppBarButton x:Name="Open" Icon="OpenFile" Label="Open" Click="Open_Click"/>
+                <AppBarButton x:Name="Open" Icon="OpenFile" Label="Open" Click="Open_Click">
+                    <AppBarButton.Flyout>
+                        <Flyout>
+                            <StackPanel Orientation="Vertical">
+                                <Button>
+                                    Cancel
+                                </Button>
+                            </StackPanel>
+                        </Flyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
                 <AppBarButton x:Name="Save" Icon="Save" Label="Save" Click="Save_Click"/>
-                <AppBarButton x:Name="SaveAs" Icon="SaveLocal" Label="Save As" Click="SaveAs_Click"/>
+                <AppBarButton x:Name="SaveAs" Icon="SaveLocal" Label="Save As" Click="SaveAs_Click">
+                    <AppBarButton.Flyout>
+                        <Flyout>
+                            <StackPanel Orientation="Vertical">
+                                <Button>
+                                    Cancel
+                                </Button>
+                            </StackPanel>
+                        </Flyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
                 <AppBarSeparator></AppBarSeparator>
-                <AppBarButton x:Name="Text" Icon="Tag" Label="Text" Click="Text_Click"/>
-                <AppBarButton x:Name="Time" Icon="Calendar" Label="Time" Click="Time_Click"/>
+                <AppBarButton x:Name="Text" Icon="Tag" Label="Text" Click="Text_Click">
+                    <AppBarButton.Flyout>
+                        <Flyout>
+                            <StackPanel Orientation="Vertical">
+                                <Button>
+                                    Cancel
+                                </Button>
+                            </StackPanel>
+                        </Flyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
+                <AppBarButton x:Name="Time" Icon="Calendar" Label="Time" Click="Time_Click">
+                    <AppBarButton.Flyout>
+                        <Flyout>
+                            <StackPanel Orientation="Vertical">
+                                <Button>
+                                    Cancel
+                                </Button>
+                            </StackPanel>
+                        </Flyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
                 <AppBarSeparator></AppBarSeparator>
                 <AppBarButton x:Name="Undo" Icon="Undo" Label="Undo" Click="Undo_Click"/>
                 <AppBarButton x:Name="Redo" Icon="Redo" Label="Redo" Click="Redo_Click"/>
+                <AppBarButton x:Name="ClearHistory" Icon="Clear" Label="Clear History" Click="ClearHistory_Click"/>
                 <AppBarSeparator></AppBarSeparator>
                 <AppBarButton x:Name="SelectAll" Icon="SelectAll" Label="Select All" Click="SelectAll_Click"/>
-                <AppBarButton x:Name="MoveCursor" Icon="MoveToFolder" Label="Move Cursor" Click="MoveCursor_Click"/>
+                <AppBarButton x:Name="MoveCursor" Icon="MoveToFolder" Label="Move Cursor" Click="MoveCursor_Click">
+                    <AppBarButton.Flyout>
+                        <Flyout>
+                            <StackPanel Orientation="Vertical">
+                                <Button>
+                                    Cancel
+                                </Button>
+                            </StackPanel>
+                        </Flyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
                 <AppBarSeparator></AppBarSeparator>
                 <AppBarButton x:Name="Cut" Icon="Cut" Label="Cut" Click="Cut_Click"/>
                 <AppBarButton x:Name="Copy" Icon="Copy" Label="Copy" Click="Copy_Click"/>
                 <AppBarButton x:Name="Paste" Icon="Paste" Label="Paste" Click="Paste_Click"/>
                 <AppBarButton x:Name="Delete" Icon="Delete" Label="Delete" Click="Delete_Click"/>
                 <AppBarSeparator></AppBarSeparator>
-                <AppBarButton x:Name="Find" Icon="Find" Label="Find" Click="Find_Click"/>
+                <AppBarButton x:Name="Find" Icon="Find" Label="Find" Click="Find_Click">
+                    <AppBarButton.Flyout>
+                        <Flyout>
+                            <StackPanel Orientation="Vertical">
+                                <Button>
+                                    Cancel
+                                </Button>
+                            </StackPanel>
+                        </Flyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
+                <AppBarToggleButton x:Name="Warp" Icon="Undo" Label="Warp" Checked="Warp_Checked" Unchecked="Warp_Unchecked"/>
             </CommandBar>
             <ScrollViewer MaxHeight="500"
                           HorizontalScrollMode="Auto"
@@ -36,7 +98,8 @@
                           VerticalScrollMode="Auto"
                           VerticalScrollBarVisibility="Auto">
                 <TextBox x:Name="TextBox"
-                         AcceptsReturn="True">
+                         AcceptsReturn="True"
+                         TextWrapping="NoWrap">
 
                 </TextBox>
             </ScrollViewer>

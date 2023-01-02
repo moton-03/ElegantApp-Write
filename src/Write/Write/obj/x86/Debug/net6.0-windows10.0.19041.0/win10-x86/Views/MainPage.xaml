@@ -19,16 +19,18 @@
                 <AppBarSeparator></AppBarSeparator>
                 <AppBarButton x:ConnectionId='10' x:Name="Undo" Icon="Undo" Label="Undo"                   />
                 <AppBarButton x:ConnectionId='11' x:Name="Redo" Icon="Redo" Label="Redo"                   />
+                <AppBarButton x:ConnectionId='12' x:Name="ClearHistory" Icon="Clear" Label="Clear History"                           />
                 <AppBarSeparator></AppBarSeparator>
-                <AppBarButton x:ConnectionId='12' x:Name="SelectAll" Icon="SelectAll" Label="Select All"                        />
-                <AppBarButton x:ConnectionId='13' x:Name="MoveCursor" Icon="MoveToFolder" Label="Move Cursor"                         />
+                <AppBarButton x:ConnectionId='13' x:Name="SelectAll" Icon="SelectAll" Label="Select All"                        />
+                <AppBarButton x:ConnectionId='14' x:Name="MoveCursor" Icon="MoveToFolder" Label="Move Cursor"                         />
                 <AppBarSeparator></AppBarSeparator>
-                <AppBarButton x:ConnectionId='14' x:Name="Cut" Icon="Cut" Label="Cut"                  />
-                <AppBarButton x:ConnectionId='15' x:Name="Copy" Icon="Copy" Label="Copy"                   />
-                <AppBarButton x:ConnectionId='16' x:Name="Paste" Icon="Paste" Label="Paste"                    />
-                <AppBarButton x:ConnectionId='17' x:Name="Delete" Icon="Delete" Label="Delete"                     />
+                <AppBarButton x:ConnectionId='15' x:Name="Cut" Icon="Cut" Label="Cut"                  />
+                <AppBarButton x:ConnectionId='16' x:Name="Copy" Icon="Copy" Label="Copy"                   />
+                <AppBarButton x:ConnectionId='17' x:Name="Paste" Icon="Paste" Label="Paste"                    />
+                <AppBarButton x:ConnectionId='18' x:Name="Delete" Icon="Delete" Label="Delete"                     />
                 <AppBarSeparator></AppBarSeparator>
-                <AppBarButton x:ConnectionId='18' x:Name="Find" Icon="Find" Label="Find"                   />
+                <AppBarButton x:ConnectionId='19' x:Name="Find" Icon="Find" Label="Find"                   />
+                <AppBarToggleButton x:ConnectionId='20' x:Name="Warp" Icon="Undo" Label="Warp"                                                  />
             </CommandBar>
             <ScrollViewer MaxHeight="500"
                           HorizontalScrollMode="Auto"
@@ -36,7 +38,8 @@
                           VerticalScrollMode="Auto"
                           VerticalScrollBarVisibility="Auto">
                 <TextBox x:ConnectionId='3' x:Name="TextBox"
-                         AcceptsReturn="True">
+                         AcceptsReturn="True"
+                         TextWrapping="NoWrap">
 
                 </TextBox>
             </ScrollViewer>
